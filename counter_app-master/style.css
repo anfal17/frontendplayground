@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  border: 1px solid #494646;
+  padding: 6px 100px;
+  border-radius: 25px;
+  box-shadow: 0 20 0 0 rgba(229, 226, 226, 0.4);
+}
+
+h1:hover {
+  border: 1px solid white;
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+
+.container {
+  background-color: #1a1919;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 1000px;
+}
+
+.btns {
+  padding: 15px 45px;
+  border: #494646;
+  margin-right: 50px;
+  font-size: 80px;
+  color: #c8c2c2;
+  background-color: #1a1919;
+  box-shadow: 0 0 20px 0 rgba(224, 220, 220, 0.4);
+  border-radius: 50%;
+}
+
+#decrement {
+  position: relative;
+  right: 40px;
+}
+
+#increment {
+  position: relative;
+  left: 40px;
+}
+
+.btns:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+  border: 1px solid white;
+}
+
+.fa-solid {
+  font-size: 55px;
+  text-align: center;
+}
+
+i {
+  margin-bottom: 25px;
+}
+
+#reset {
+  padding: 15px 20px;
+  border: #494646;
+  margin-right: 50px;
+  color: #c8c2c2;
+  background-color: #1a1919;
+  box-shadow: 0 0 20px 0 rgba(224, 220, 220, 0.4);
+  border-radius: 50%;
+}
+
+#reset:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+  border: 1px solid white;
+}
+
+.fa-rotate-right {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+#screen {
+  font-weight: 700;
+  font-size: 250px;
+  margin-bottom: 10px;
+}
+
+/* ----Media Queries---- */
+@media (min-width: 0px) and (max-width: 425px) {
+  h1 {
+    padding: 6px 50px;
+    position: absolute;
+    top: 80px;
+  }
+
+  .btn{
+    padding-top: 100px;
+  }
+
+  .btns {
+    padding: 15px 25px;
+    margin:auto;
+    font-size: 30px;
+  }
+
+  #decrement {
+    position: relative;
+    right: 10px;
+  }
+
+  #increment {
+    position: relative;
+    left: 10px;
+  }
+
+  .fa-solid {
+    font-size: 55px;
+    text-align: center;
+  }
+
+  i {
+    margin-bottom: 5px;
+  }
+
+  #reset {
+    padding: 15px 20px;
+    margin: 0 20px;
+  }
+
+  .fa-rotate-right {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+
+  #screen {
+    font-weight: 700;
+    font-size: 200px;
+    margin-top: 150px;
+  }
+}
